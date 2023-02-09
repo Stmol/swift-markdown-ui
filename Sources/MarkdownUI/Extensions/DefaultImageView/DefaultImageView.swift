@@ -11,8 +11,10 @@ struct DefaultImageView: View {
     case .notRequested, .loading, .failure:
       Color.clear
         .frame(width: 0, height: 0)
-        .task {
-          await self.viewModel.task(url: self.url, urlSession: self.urlSession)
+        .onAppear {
+            Task {
+                await self.viewModel.task(url: self.url, urlSession: self.urlSession)
+            }
         }
     case .success(let image, let size):
       ResizeToFit(idealSize: size) {

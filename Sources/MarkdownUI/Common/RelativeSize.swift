@@ -57,6 +57,7 @@ extension RelativeSize {
   }
 }
 
+@available(iOS 15, *)
 extension View {
   /// Positions this view within an invisible frame with the specified size.
   ///

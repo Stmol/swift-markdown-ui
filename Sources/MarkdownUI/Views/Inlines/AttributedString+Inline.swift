@@ -1,5 +1,5 @@
 import Foundation
-
+@available(iOS 15, *)
 struct InlineEnvironment {
   let baseURL: URL?
   let code: TextStyle
@@ -9,6 +9,7 @@ struct InlineEnvironment {
   let link: TextStyle
 }
 
+@available(iOS 15, *)
 extension AttributedString {
   init(inlines: [Inline], environment: InlineEnvironment, attributes: AttributeContainer) {
     self = inlines.map {
@@ -58,6 +59,7 @@ extension AttributedString {
   }
 }
 
+@available(iOS 15, *)
 extension TextStyle {
   fileprivate func mergingAttributes(_ attributes: AttributeContainer) -> AttributeContainer {
     var newAttributes = attributes

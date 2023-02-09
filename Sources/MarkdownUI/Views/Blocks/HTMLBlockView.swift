@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 struct HTMLBlockView: View {
   private let content: String
 

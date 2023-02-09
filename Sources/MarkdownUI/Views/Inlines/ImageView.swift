@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 struct ImageView: View {
   @Environment(\.imageProvider) private var imageProvider
   @Environment(\.imageBaseURL) private var baseURL
@@ -30,6 +31,7 @@ struct ImageView: View {
   }
 }
 
+@available(iOS 15, *)
 extension ImageView {
   init?(_ inlines: [Inline]) {
     guard inlines.count == 1, let inline = inlines.first else {

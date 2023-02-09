@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 extension View {
   func readWidth(column: Int) -> some View {
     self.background(
@@ -14,6 +15,7 @@ extension View {
   }
 }
 
+@available(iOS 15, *)
 private struct ColumnWidthPreference: PreferenceKey {
   static let defaultValue: [Int: CGFloat] = [:]
 

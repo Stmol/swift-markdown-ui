@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 extension Block: View {
   var body: some View {
     switch self {

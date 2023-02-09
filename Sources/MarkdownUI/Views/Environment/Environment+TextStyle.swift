@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 extension View {
   /// Sets the default text style for the Markdown inlines in a view hierarchy.
   ///
@@ -28,6 +29,7 @@ extension View {
   }
 }
 
+@available(iOS 15, *)
 extension TextStyle {
   @TextStyleBuilder fileprivate func appending<S: TextStyle>(
     _ textStyle: S
@@ -37,6 +39,7 @@ extension TextStyle {
   }
 }
 
+@available(iOS 15, *)
 extension EnvironmentValues {
   fileprivate(set) var textStyle: TextStyle {
     get { self[TextStyleKey.self] }
@@ -44,6 +47,7 @@ extension EnvironmentValues {
   }
 }
 
+@available(iOS 15, *)
 private struct TextStyleKey: EnvironmentKey {
   static let defaultValue: TextStyle = FontProperties()
 }

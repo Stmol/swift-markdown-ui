@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 struct CodeBlockView: View {
   @Environment(\.codeSyntaxHighlighter) private var codeSyntaxHighlighter
 

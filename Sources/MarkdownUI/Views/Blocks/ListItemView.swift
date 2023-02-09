@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 struct ListItemView: View {
   @Environment(\.listLevel) private var listLevel
 

@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 struct InlineText: View {
   @Environment(\.baseURL) private var baseURL
   @Environment(\.theme) private var theme

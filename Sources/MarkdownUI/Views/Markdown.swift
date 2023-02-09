@@ -188,6 +188,7 @@ import SwiftUI
 ///   }
 /// )
 /// ```
+@available(iOS 15, *)
 public struct Markdown: View {
   private enum Storage: Equatable {
     case text(String)
@@ -240,6 +241,7 @@ public struct Markdown: View {
   }
 }
 
+@available(iOS 15, *)
 extension Markdown {
   /// Creates a Markdown view from a Markdown-formatted string.
   /// - Parameters:
@@ -309,6 +311,7 @@ extension Markdown {
   }
 }
 
+@available(iOS 15, *)
 private struct ScaledFontSizeModifier: ViewModifier {
   @ScaledMetric private var size: CGFloat
 

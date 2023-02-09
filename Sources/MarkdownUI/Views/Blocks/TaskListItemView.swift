@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 struct TaskListItemView: View {
   private let item: TaskListItem
 

@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15, *)
 struct ListItemSequence: View {
   private let items: [ListItem]
   private let start: Int

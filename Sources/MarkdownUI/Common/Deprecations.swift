@@ -43,6 +43,7 @@ public struct MarkdownImageHandler {
   }
 }
 
+@available(iOS 15, *)
 extension Markdown {
   @available(
     *,

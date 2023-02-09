@@ -137,6 +137,7 @@ public struct FontProperties: Hashable {
   }
 }
 
+@available(iOS 15, *)
 extension FontProperties: TextStyle {
   public func _collectAttributes(in attributes: inout AttributeContainer) {
     attributes.fontProperties = self

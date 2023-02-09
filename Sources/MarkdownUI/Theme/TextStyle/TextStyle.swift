@@ -58,5 +58,6 @@ import SwiftUI
 ///
 /// ![](CustomBlockquote)
 public protocol TextStyle {
+  @available(iOS 15, *)
   func _collectAttributes(in attributes: inout AttributeContainer)
 }
